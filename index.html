@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Estudio</title>
     <!--estos links son referentes a la fuente de texto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="container">
     <header class="header">
         <div class="logo">
             <p>WebStudio</p>
@@ -24,8 +24,14 @@
             <a href="Contactos">Contactos</a>
         </nav>
         <div class="datoscontacto">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+525555296000">+52 55 5529 6000</a>
+            <div class="mail">
+                <svg class="icon icon-sobre"><use xlink:href="imagenesicons/icons.svg#icon-sobre"></use></svg>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <div class="phone">
+                <svg class="icon icon-Vector"><use xlink:href="imagenesicons/icons.svg#icon-Vector"></use></svg>
+                <a href="tel:+525555296000">+52 55 5529 6000</a>
+            </div>
         </div>
     </header>
     <main>
@@ -34,39 +40,43 @@
             <button class="link" type="button">Solicitar un servicio</button>
         </div>
         <div class="serviceadvantages">
-            <figure>
-                <figcaption>
-                    <h2>ATENCION A LOS DETALLES</h2>
-                    <p>Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solucion a su medida.</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <figcaption>
-                    <h2>PUNTUALIDAD</h2>
-                    <p>con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <figcaption>
-                    <h2>PLANIFICACION</h2>
-                    <p>Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
-                </figcaption>
-            </figure>
-            <figure>
-                <figcaption>
-                    <h2>TECNOLOGIA MODERNA</h2>
-                    <p>Usamos herramientas inovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
-                </figcaption>
-            </figure>
+            <div class="atencionDetalle">
+                <div class="antena">
+                    <svg class="icon icon-antena-1"><use xlink:href="imagenesicons/icons.svg#icon-antena-1"></use></svg>
+                </div>
+                <h2>ATENCION A LOS DETALLES</h2>
+                <p>Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solucion a su medida.</p>
+            </div>
+            <div class="puntualidad">
+                <div class="reloj">
+                    <svg class="icon icon-reloj-1"><use xlink:href="imagenesicons/icons.svg#icon-reloj-1"></use></svg>
+                </div>
+                <h2>PUNTUALIDAD</h2>
+                <p>con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p> 
+            </div>
+            <div class="planificacion">
+                <div class="diagrama">
+                    <svg class="icon icon-diagrama-1"><use xlink:href="imagenesicons/icons.svg#icon-diagrama-1"></use></svg>
+                </div>
+                <h2>PLANIFICACION</h2>
+                <p>Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
+            </div>
+            <div class="tecnologia">
+                <div class="astronauta">
+                    <svg class="icon icon-astronauta-1"><use xlink:href="imagenesicons/icons.svg#icon-astronauta-1"></use></svg>
+                </div>
+                <h2>TECNOLOGIA MODERNA</h2>
+                <p>Usamos herramientas inovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
+            </div>
         </div>
         <div class="expertice">
             <div class="experticetitle">
                 <h2>A qué nos dedicamos</h2>
             </div>
             <div class="experticeimages">
-                <img src="imagenesinicio/a.jpg" alt="Programando en una tablet con teclado" width="373.16" height="323.7"/>
-                <img src="imagenesinicio/b.jpg" alt="Version responsive" width="373.16" height="323.7"/>
-                <img src="imagenesinicio/c.jpg" alt="Diseño de arte" width="373.16" height="323.7"/>
+                <img src="imagenesinicio/a.jpg" alt="Programando en una tablet con teclado" width="373.16px" height="323.7px"/>
+                <img src="imagenesinicio/b.jpg" alt="Version responsive" width="373.16px" height="323.7px"/>
+                <img src="imagenesinicio/c.jpg" alt="Diseño de arte" width="373.16px" height="323.7px"/>
             </div>
         </div>
         <div class="teambox">
@@ -75,11 +85,19 @@
                     <h2>Nuestro equipo</h2>
                 </div>
                 <div class="presentation">
-                    <figure>
+                    <figure class="figure">
                         <img src="imagenesinicio/d.jpg" alt="Nombre y espertiz" width="270" height="260"/>
                         <figcaption>
-                            <h3>Andrés Cubo</h3>
-                            <p>Diseñador de productos</p>
+                            <div class="datosPersonales">
+                                <h3>Andrés Cubo</h3>
+                                <p>Diseñador de productos</p>
+                            </div>
+                            <div class="redesSociales">
+                                <svg class="icon icon-instagram"><use xlink:href="imagenesicons/icons.svg#icon-instagram"></use></svg>
+                                <svg class="icon icon-twitter"><use xlink:href="imagenesicons/icons.svg#icon-twitter"></use></svg>
+                                <svg class="icon icon-facebook"><use xlink:href="imagenesicons/icons.svg#icon-facebook"></use></svg>
+                                <svg class="icon icon-linkedin2"><use xlink:href="imagenesicons/icons.svg#icon-linkedin2"></use></svg>
+                            </div>
                         </figcaption>
                     </figure>
                     <figure>
@@ -104,6 +122,17 @@
                         </figcaption>
                     </figure>
                 </div>
+            </div>
+        </div>
+        <div class="nuestrosClientes">
+            <h2>Clientes Regulares</h2>
+            <div>
+                <svg class="icon icon-Logo"><use xlink:href="imagenesicons/icons.svg#icon-Logo"></use></svg>
+                <svg class="icon icon-Logo-1"><use xlink:href="imagenesicons/icons.svg#icon-Logo-1"></use></svg>
+                <svg class="icon icon-Logo-2"><use xlink:href="imagenesicons/icons.svg#icon-Logo-2"></use></svg>
+                <svg class="icon icon-Logo-3"><use xlink:href="imagenesicons/icons.svg#icon-Logo-3"></use></svg>
+                <svg class="icon icon-Logo-4"><use xlink:href="imagenesicons/icons.svg#icon-Logo-4"></use></svg>
+                <svg class="icon icon-Logo-5"><use xlink:href="imagenesicons/icons.svg#icon-Logo-5"></use></svg>
             </div>
         </div>
     </main>

@@ -18,7 +18,7 @@
     --interlineadoe: 36px;
 }
 
-.container{
+.container {
     width: 1600px;
 }
 
@@ -26,7 +26,6 @@
     width: 78%;
     height: 100px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-left: 215px;
@@ -45,15 +44,29 @@ nav {
 }
 
 .datoscontacto {
-    width: 303px;
+    width: 350px;
+    display: flex; 
+    align-items: center;
+}
+
+.mail{
+    width: 180px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.phone{
+    width: 170px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .servicerequest{
     height: 600px;
     width: 100%;
-    background: #2F303A;
+    background-image: url(imagenesinicio/Imagen.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,21 +78,79 @@ h1 {
 }
 
 .serviceadvantages{
-    height: 284px;
+    height: 350px;
+    width: 78%;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+.atencionDetalle {
+    width: 270px;
+}
+
+.antena {
+    width: 270px;
+    height: 120px;
+    background-color: var(--colorbotonesfiltro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.puntualidad {
+    width: 270px;
+}
+
+.reloj {
+    width: 270px;
+    height: 120px;
+    background-color: var(--colorbotonesfiltro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planificacion {
+    width: 270px;
+}
+
+.diagrama {
+    width: 270px;
+    height: 120px;
+    background-color: var(--colorbotonesfiltro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnologia{
+    width: 270px;
+}
+
+.astronauta {
+    width: 270px;
+    height: 120px;
+    background-color: var(--colorbotonesfiltro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expertice{
+    width: 78%;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .experticetitle{
     display: flex;
     justify-content: center;
-}
-
-.expertice{
-    width: 1180.16px;
-    height: 425px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .experticeimages{
@@ -88,12 +159,13 @@ h1 {
 }
 
 .teambox{
-    height: 648px;
     width: 100%;
     background: var(--colorbotonesfiltro);
+    padding-bottom: 80px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .team{
@@ -102,13 +174,43 @@ h1 {
 }
 
 .teamtitle{
+    padding-top: 80px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
+    
 }
 
 .presentation{
+    width: 78%;
     display: flex;
-    justify-content: center;   
+}
+
+.figure {
+    width: 270px;
+    background-color: white;
+}
+
+.datosPersonales {
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.nuestrosClientes {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 a{
@@ -152,6 +254,7 @@ button:hover{
 }
 
 .projects {
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -194,3 +297,91 @@ h3{
    color: var(--negativecolor)
 }
 
+.icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(sprite.svg);
+  }
+  .icon-astronauta-1 {
+    width: 70px;
+    height: 70px;
+    background-position: 0 0;
+  }
+  .icon-Logo-5 {
+    width: 106px;
+    height: 60px;
+    background-position: -48px 0;
+  }
+  .icon-Logo-4 {
+    width: 106px;
+    height: 60px;
+    background-position: -144px 0;
+  }
+  .icon-Logo-3 {
+    width: 106px;
+    height: 60px;
+    background-position: -240px 0;
+  }
+  .icon-Logo-2 {
+    width: 106px;
+    height: 60px;
+    background-position: -336px 0;
+  }
+  .icon-Logo-1 {
+    width: 106px;
+    height: 60px;
+    background-position: -432px 0;
+  }
+  .icon-Logo {
+    width: 106px;
+    height: 60px;
+    background-position: -528px 0;
+  }
+  .icon-diagrama-1 {
+    width: 70px;
+    height: 53.69px;
+    background-position: -624px 0;
+  }
+  .icon-reloj-1 {
+    width: 66.96px;
+    height: 70px;
+    background-position: -672px 0;
+  }
+  .icon-antena-1 {
+    width: 65.32px;
+    height: 70px;
+    background-position: -720px 0;
+  }
+  .icon-Vector {
+    width: 10px;
+    height: 16px;
+    background-position: 0 -48px;
+  }
+  .icon-sobre {
+    width: 16px;
+    height: 12px;
+    height: 32px;
+    background-position: -48px -48px;
+  }
+  .icon-facebook {
+    width: 20px;
+    height: 20px;
+    background-position: 0 -96px;
+  }
+  .icon-instagram {
+    width: 20px;
+    height: 20px;
+    background-position: -48px -96px;
+  }
+  .icon-twitter {
+    width: 20px;
+    height: 20px;
+    background-position: -96px -96px;
+  }
+  .icon-linkedin2 {
+    width: 20px;
+    height: 20px;
+    background-position: -144px -96px;
+  }
+  
+  
