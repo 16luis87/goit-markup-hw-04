@@ -23,12 +23,13 @@
 }
 
 .header{
-    width: 78%;
     height: 100px;
+    padding-left: 215px;
+    padding-right: 215px;
+    border: 1px solid #EEEEEE; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 215px;
 }
 
 .logo {
@@ -294,9 +295,31 @@ main{
     flex-wrap: wrap;
 }
 
+.filterbox {
+    width: 38%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .filterbox:hover{
     color: var(--colorbotonesfiltro);
     cursor: pointer;
+}
+
+.link {
+    padding-left: 24px;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+}
+
+.link:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main {
+    width: 100%;
+    padding-top: 80px;
 }
 
 button:hover{
@@ -305,10 +328,25 @@ button:hover{
 }
 
 .projects {
-    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 80px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.tarjets {
+    border: 1px solid #EEEEEE;   
+}
+
+.tarjets:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.tarjettext {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
 }
 
 .link{
@@ -354,6 +392,7 @@ h3{
 
 .iconsRedesSociales {
     display: flex;
+    justify-content: space-between;
 }
 
 .icon {
